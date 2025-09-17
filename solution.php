@@ -1,13 +1,6 @@
 <?php
 
 function processUsers(array $users): array {
-    if (empty($users)) {
-        return [];
-    }
-    
-    $users = array_map('formatUserData', $users);
-    $users = addAgeGroupField($users);
-    $users = sortUsersByRegistrationDate($users);
     
     return $users;
 }
