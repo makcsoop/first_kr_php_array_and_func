@@ -1,9 +1,7 @@
 <?php
 // test_system.php
 
-// Подключаем решение
-//require_once 'solution.php';
-require_once 'correct_solution.php';
+require_once 'solution.php';
 
 class UserTestSystem {
     
@@ -163,5 +161,7 @@ $testSystem = new UserTestSystem();
 $results = $testSystem->runAllTests();
 $testSystem->printResults($results);
 
-echo "\n";
-$testSystem->printProcessedData();
+
+// подррбный вывод (при желании можно вытащить из комментариев)
+// echo "\n";
+// $testSystem->printProcessedData();
